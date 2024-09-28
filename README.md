@@ -29,3 +29,7 @@ For MacOS and Linux there is just a runnable JAR provided.
 
 For windows there is a ZIP file with an exe file and a JRE environment.
 Just extract the ZIP and run the exe.
+
+## TODO
+
+- [ ] Refactor UI tests so they run on CI/CD as well

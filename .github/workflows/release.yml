@@ -19,7 +19,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Build packages
-        run: mvn -P build_windows_exe clean install
+        run: mvn -P build_windows_exe -DskipTests clean install
 
       - name: Create Release
         uses: actions/create-release@v1
