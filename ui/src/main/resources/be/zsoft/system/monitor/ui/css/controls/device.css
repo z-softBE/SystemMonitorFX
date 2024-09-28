@@ -1,0 +1,26 @@
+@import '../../fonts/Fonts.css';
+@import '../Common.css';
+@import '../MFXColors.css';
+
+.text-muted {
+    -fx-text-fill: #6c757d;
+    -fx-fill: #6c757d;
+}
+
+.default-toggle {
+    -mfx-selected-color: -common-gradient;
+    -mfx-selected-border-color: transparent;
+    -fx-text-fill: black;
+}
+
+.default-toggle:selected .mfx-font-icon {
+    -mfx-color: white;
+}
+
+.default-toggle:selected .mfx-ripple-generator {
+    -mfx-paused: true;
+}
+
+.default-toggle:selected {
+    -fx-text-fill: white;
+}

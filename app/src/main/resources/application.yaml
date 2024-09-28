@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: System Monitor
+
+project:
+  version: @project.version@

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.mfxcore.controls.Label?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.zsoft.system.monitor.ui.controller.view.MemoryUsageController">
+   <children>
+      <HBox fx:id="headerContainer" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Label fx:id="titleLbl" text="Memory: 32.0 GB / 64.0 GB">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <AreaChart fx:id="usageChart" animated="false" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="55.0">
+         <xAxis>
+            <NumberAxis animated="false" autoRanging="false" minorTickVisible="false" side="BOTTOM" upperBound="60.0" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis animated="false" autoRanging="false" minorTickVisible="false" side="LEFT" />
+         </yAxis>
+      </AreaChart>
+   </children>
+</AnchorPane>

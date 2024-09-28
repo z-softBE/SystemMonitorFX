@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXComboBox?>
+<?import io.github.palexdev.mfxcore.controls.Label?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedAreaChart?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.zsoft.system.monitor.ui.controller.view.DiskUsageController">
+   <children>
+      <MFXComboBox fx:id="switchDiskCb" floatMode="BORDER" floatingText="Select Disk" onAction="#onSwitchDisk" prefWidth="150.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+      <HBox fx:id="headerContainer" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Label fx:id="titleLbl" text="C: Samsung">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <StackedAreaChart fx:id="diskUsageChart" animated="false" layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="55.0">
+         <xAxis>
+            <NumberAxis animated="false" autoRanging="false" minorTickVisible="false" side="BOTTOM" upperBound="60.0" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis animated="false" label="KB/S" minorTickVisible="false" side="LEFT" />
+         </yAxis>
+      </StackedAreaChart>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.mfxcore.controls.*?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.zsoft.system.monitor.ui.controller.view.AboutController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="System Monitor" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="96.0" text="Version:" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="100.0" />
+      <Label layoutX="15.0" layoutY="119.0" text="Developed by:" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="125.0" />
+      <Label layoutX="15.0" layoutY="143.0" text="Source code: " AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="150.0" />
+      <MFXButton buttonType="RAISED" depthLevel="LEVEL5" layoutX="9.0" layoutY="188.0" onAction="#onDonate" rippleAnimateShadow="true" text="Donate" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="188.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </MFXButton>
+      <Hyperlink layoutX="102.0" layoutY="122.0" onAction="#onNavigateToSourceCode" text="https://github.com/z-softBE/SystemMonitorFX" AnchorPane.leftAnchor="102.0" AnchorPane.topAnchor="147.0" />
+      <Hyperlink layoutX="102.0" layoutY="122.0" onAction="#onNavigateToZSoft" text="Z-Soft" AnchorPane.leftAnchor="102.0" AnchorPane.topAnchor="122.0" />
+      <Label fx:id="versionLbl" layoutX="102.0" layoutY="100.0" text="1.0.0" AnchorPane.leftAnchor="102.0" AnchorPane.topAnchor="100.0" />
+   </children>
+</AnchorPane>

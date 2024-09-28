@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.mfxcore.controls.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="be.zsoft.system.monitor.ui.controller.view.CpuUsageController">
+   <children>
+      <HBox fx:id="headerContainer" prefHeight="35.0" prefWidth="770.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <children>
+            <Label fx:id="cpuNameLabel" text="Intel 12th gen core (TM) I7-12700K" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <AreaChart fx:id="systemCpuChart" animated="false" layoutX="14.0" layoutY="50.0" visible="false" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="55.0">
+        <xAxis>
+          <NumberAxis animated="false" autoRanging="false" minorTickVisible="false" side="BOTTOM" upperBound="60.0" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis animated="false" autoRanging="false" minorTickVisible="false" side="LEFT" />
+        </yAxis>
+      </AreaChart>
+      <StackedAreaChart fx:id="logicProcessorChart" animated="false" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="55.0">
+        <xAxis>
+          <NumberAxis animated="false" autoRanging="false" minorTickVisible="false" side="BOTTOM" upperBound="60.0" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis animated="false" autoRanging="false" minorTickVisible="false" side="LEFT" />
+        </yAxis>
+      </StackedAreaChart>
+   </children>
+</AnchorPane>
