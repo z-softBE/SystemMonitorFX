@@ -109,10 +109,7 @@
                                         <companyName>Z-Soft</companyName>
                                         <copyright>2024</copyright>
                                     </versionInfo>
-
-                                    <!-- TODO set an ICON-->
-<!--                                    <icon>src/main/resources/icon.ico</icon>-->
-
+                                    <icon>src/main/resources/logo.ico</icon>
                                     <jre>
                                         <minVersion>22.0.0</minVersion>
                                         <path>jre/jdk-22.0.2</path>

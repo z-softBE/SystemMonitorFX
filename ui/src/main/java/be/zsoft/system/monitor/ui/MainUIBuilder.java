@@ -7,6 +7,7 @@ import io.github.palexdev.materialfx.theming.UserAgentBuilder;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -43,10 +44,13 @@ public class MainUIBuilder {
         Scene scene = new Scene(root, 1200, 800);
         scene.setFill(Color.TRANSPARENT);
 
+        Image icon = new Image(ResourceLoader.load("logo.png"), 32, 32, true, true);
+
         stage.initStyle(StageStyle.DECORATED);
         stage.setTitle("Z-Soft System Monitor");
         stage.setMinWidth(1200);
         stage.setMinHeight(800);
+        stage.getIcons().add(icon);
         stage.setScene(scene);
         stage.show();
     }

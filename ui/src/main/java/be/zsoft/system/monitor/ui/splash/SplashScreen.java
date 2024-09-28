@@ -23,6 +23,8 @@ public class SplashScreen extends JFrame {
         int y = (screenSize.height - getHeight()) / 2;
         setLocation(x, y);
 
+        setIconImage(Toolkit.getDefaultToolkit().getImage(ResourceLoader.loadURL("logo.png")));
+
         setVisible(true);
     }
 }
